@@ -1,0 +1,178 @@
+/* Reset e Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #748cca;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Tipografia */
+h1, h2, h3 {
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+/* Layout Principal */
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    color: #dde6fb;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-style: italic;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cards da Equipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    background-color: #abbff2;
+    border: 2px solid #dee7fe;
+    border-radius: 21px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-name {
+    color: #576ea9;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #748cca;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Social Icons */
+.social-links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.social-icon {
+    background-color: #748cca;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #576ea9;
+    transform: scale(1.1);
+}
+
+.social-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header p {
+        font-size: 0.9rem;
+    }
+    
+    .main-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-container {
+        padding: 1rem;
+    }
+}
+
+.voltar-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 9999;
+    text-decoration: none;
+  }
+  
+  .voltar-home:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+  
+  footer {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #e0f7fa 0%, #fffde4 100%);
+  color: #222;
+  border-top: 2px solid #b2dfdb;
+  border-radius: 0 0 16px 16px;
+}
+
+footer span {
+  display: block;
+  margin-top: 8px;
+  color: #388e3c;
+  font-size: 0.98rem;
+}
