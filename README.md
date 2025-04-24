@@ -1,48 +1,60 @@
-# 🚀 Projeto UPX - FACENS
+🚀 UPX Project - FACENS
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
+   
 
-Este é o repositório oficial do nosso primeiro projeto da matéria **UPX** (Usina de Projetos Experimentais) da **FACENS**. Ele está sendo projetado e desenvolvido com muito empenho e colaboração por:
+This repository contains the official codebase for our inaugural project in the UPX (Experimental Project Lab) course at FACENS. The development is a collaborative effort by:
 
-👨‍💻 Enrico  
-🧠 Renan  
-🧰 Giovanni  
-🖥️ Caio  
-🔍 Vinicius  
-🎨 Eduarda  
+👨‍💻 Enrico
 
----
+🧠 Renan
 
-## 📌 Sobre o Projeto chamado "BreathFree"
+🧰 Giovanni
 
-Estamos desenvolvendo uma aplicação utilizando:
+🖥️ Caio
 
-- **HTML5** para estruturação  
-- **CSS3** para estilização  
-- **JavaScript** para interação e lógica no frontend  
-- **Java** para a parte backend e futura integração de lógica avançada  
+🔍 Vinicius
 
-> O projeto ainda está sob desenvolvimento, mas já atinge 70% de progresso com funcionalidades sólidas e interface em andamento. Mais detalhes serão revelados em breve nos próximos commits.
+🎨 Eduarda
+
+
 
 ---
 
-## ⏳ Progresso Atual
+📌 Project Overview — "BreathFree"
 
-| Tarefa                                   | Status     |
-|------------------------------------------|------------|
-| Estrutura de pastas definida             | ✅ Concluído |
-| Páginas HTML base criadas                | ✅ Concluído |
-| Lógica inicial em JavaScript             | ✅ Concluído |
-| Estilização parcial em CSS               | ✅ Concluído |
-| Integração backend com Java              | 🚧 Em progresso |
-| Testes finais e refino geral             | ⏳ A fazer  |
+BreathFree is a web application designed to enhance user interaction through a seamless frontend and robust backend. The technology stack includes:
 
-📌 **Status atual:** `70%` concluído  
-📅 **Atualizações serão publicadas em breve nos commits futuros!**
+HTML5 for semantic structure
+
+CSS3 for responsive and adaptive styling
+
+JavaScript for dynamic client-side functionality
+
+Java for server-side logic and future scalability
+
+
+> The project is currently at 70% completion, with core functionalities implemented and UI/UX design in progress. Further enhancements and features are planned for upcoming iterations.
+
+
+
 
 ---
 
+⏳ Development Progress
+
+📌 Current status: 70% completed
+📅 Upcoming updates will be documented in future commits.
+
+
+---
+
+⚙️ Installation Guide
+
+To set up the project locally, execute the following command in your terminal:
+
+git clone https://github.com/<your-username>/BreathFree.git
+
+Replace <your-username> with your GitHub username.
+
+After cloning, navigate to the project directory and open it in your preferred Integrated Development Environment (IDE) or code editor to begin development or exploration.
 
