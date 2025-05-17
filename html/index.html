@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BreathFree - Nova Home</title>
-  <link rel="stylesheet" href="/css/Início.css" />
+  <link rel="stylesheet" href="/css/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -24,17 +24,19 @@
     <nav class="navbar">
       <a href="/html/Início.html" class="active">Início</a>
       <a href="/html/Info.html">Sobre nós</a>
-      <a href="/html/temperatura.html">Temperatura</a>
-      <a href="/html/qualidadeAr.html">Qualidade do Ar</a>
-      <a href="/html/Precipitação.html">Precipitação</a>
-      <a href="/html/Intensidade do Vento.html">intensidade do Vento</a>
-      <a href="/html/Diferencial.html" class="cor"><strong>Nosso Diferencial!</strong></a>
+      <a href="/html/Temp.html">Temperatura</a>
+      <a href="/html/QA.html">Qualidade do Ar</a>
+      <a href="/html/Preci.html">Precipitação</a>
+      <a href="/html/Inten.html">intensidade do Vento</a>
+      <a href="/html/Dif.html" class="cor"><strong>Nosso Diferencial!</strong></a>
     </nav>
     <div class="main">
-      <a href="#" class="user"><i class="ri-user-fill"></i><strong>Log in</strong></a>
-      <a href="#"><strong>Sign in</strong></a>
+      <a id="loginButton"href="/html/lr.html" class="user"><i class="ri-user-fill"></i><strong>Log in</strong></a>
+      <a id="signInButton"href="/html/lr.html"><strong>Sign in</strong></a>
+      <a id="logoutButton" onclick="logout()" style="display: none;"><strong>Logout</strong></a>
       <div class="bx bx-menu" id="menu-icon"></div>
     </div>
+    <script src="/js/hasToken.js"></script>
   </header>
 
   <!-- PARALLAX SECTIONS -->
@@ -142,9 +144,67 @@
     </div>
   </section>
 
-  <footer>
-    <p>Desenvolvido por BreathFree<br><span>Juntos por um ambiente mais seguro e saudável.</span></p>
-</footer>
+  <!-- ... (todo o seu código acima permanece inalterado) -->
+
+  <!-- FOOTER -->
+  <footer style="background-color: #111; color: #fff; padding: 60px 20px 30px; font-family: 'Poppins', sans-serif;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+      
+      <!-- Coluna 1 -->
+      <div style="flex: 1 1 200px; margin: 10px;">
+        <h3 style="font-weight: 600; margin-bottom: 20px;">Ajuda</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="/Footer/Pedidos.html" style="color: #aaa; text-decoration: none;">Pedidos</a></li>
+          <li><a href="/Footer/Entrega.html" style="color: #aaa; text-decoration: none;">Entrega</a></li>
+          <li><a href="/Footer/Trocas_Devol.html" style="color: #aaa; text-decoration: none;">Trocas e Devoluções</a></li>
+          <li><a href="/Footer/Pagamentoss.html" style="color: #aaa; text-decoration: none;">Pagamentos</a></li>
+        </ul>
+      </div>
+  
+      <!-- Coluna 2 -->
+      <div style="flex: 1 1 200px; margin: 10px;">
+        <h3 style="font-weight: 600; margin-bottom: 20px;">Sobre a BreathFree</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="/Footer/Historia.html" style="color: #aaa; text-decoration: none;">Nossa História</a></li>
+          <li><a href="/Footer/Sustentabilidade.html" style="color: #aaa; text-decoration: none;">Sustentabilidade</a></li>
+          <li><a href="/Footer/Inovação.html" style="color: #aaa; text-decoration: none;">Inovação</a></li>
+          <li><a href="/Footer/Parcerias.html" style="color: #aaa; text-decoration: none;">Parcerias</a></li>
+        </ul>
+      </div>
+  
+      <!-- Coluna 3 -->
+      <div style="flex: 1 1 200px; margin: 10px;">
+        <h3 style="font-weight: 600; margin-bottom: 20px;">Fale Conosco</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="/Footer/Central_Atendimento.html" style="color: #aaa; text-decoration: none;">Central de Atendimento</a></li>
+          <li><a href="/Footer/Duvidas_Frequentes.html" style="color: #aaa; text-decoration: none;">Dúvidas Frequentes</a></li>
+          <li><a href="/Footer/Trabalhe_Conosco.html" style="color: #aaa; text-decoration: none;">Trabalhe Conosco</a></li>
+          <li><a href="/Footer/Suporte_Tecnico.html" style="color: #aaa; text-decoration: none;">Suporte Técnico</a></li>
+        </ul>
+      </div>
+  
+      <!-- Redes sociais -->
+      <div style="flex: 1 1 200px; margin: 10px; display: flex; flex-direction: column; align-items: flex-start;">
+        <h3 style="font-weight: 600; margin-bottom: 10px;">Siga-nos</h3>
+        <div style="display: flex; gap: 15px;">
+          <a href="#" style="color: #fff; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: #fff; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: #fff; font-size: 20px;"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" style="color: #fff; font-size: 20px;"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Créditos -->
+    <div style="text-align: center; color: #666; margin-top: 40px; font-size: 0.9em;">
+      &copy; 2025 BreathFree. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
 
 </body>
 </html>

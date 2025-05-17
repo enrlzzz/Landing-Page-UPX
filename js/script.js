@@ -1,3 +1,4 @@
+
 // Espera o carregamento completo da página
 window.addEventListener('load', () => {
     // Esconde o loader suavemente
@@ -23,3 +24,21 @@ window.addEventListener('load', () => {
     }, 150);
   });
   
+// Adiciona o evento de clique para o link "Registrar-se"
+document.getElementById('showRegisterForm').addEventListener('click', function() {
+  mensagem.textContent = '';
+  // Esconde o formulário de login
+  document.querySelector('.login-form').style.display = 'none';
+  // Exibe o formulário de registro
+  document.querySelector('.register-form').style.display = 'block';
+});
+
+// Adiciona o evento de clique para o link "Entrar"
+document.getElementById('showLoginForm').addEventListener('click', function() {
+    mensagem.textContent = '';
+  // Esconde o formulário de registro
+  document.querySelector('.register-form').style.display = 'none';
+  // Exibe o formulário de login
+  document.querySelector('.login-form').style.display = 'block';
+});
+
